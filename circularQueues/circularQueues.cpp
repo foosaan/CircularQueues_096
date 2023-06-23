@@ -68,6 +68,7 @@ public:
 			return;
 		}
 
-		
+		cout << "\nelement in the queue are...\n";
+
 	}
 };
