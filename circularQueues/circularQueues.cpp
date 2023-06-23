@@ -43,6 +43,15 @@ void remove() {
 		cout << "queues underflow\n";
 		return;
 	}
-	cout << "\nthe element deleted from the queue is:" << queue_array[front] << "\
+	cout << "\nthe element deleted from the queue is:" << queue_array[front] << "\n";
+    
+	// cek jika antiran hanya memiliki satu elemen
+	if (front == rear) {
+		front = -1;
+		rear = -1;
+	}
+	else {
+		
+	}
 
 }
