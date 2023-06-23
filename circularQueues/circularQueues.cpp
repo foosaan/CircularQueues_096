@@ -36,3 +36,7 @@ public:
 		queue_array[rear] = num;
 	}
 };
+
+void remove() {
+
+}
