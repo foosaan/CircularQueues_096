@@ -27,4 +27,11 @@ public:
 			rear = 0;
 		}
 		else {
+			//jika rear berada di posisi terakhir array, maka kembali ke awal array
+			if (rear == max - 1)
+				rear = 0;
+			else
+				rear = rear + 1;
+		}
+
 };
