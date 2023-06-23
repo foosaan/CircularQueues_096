@@ -26,5 +26,5 @@ public:
 			front = 0;
 			rear = 0;
 		}
-
+		else {
 };
