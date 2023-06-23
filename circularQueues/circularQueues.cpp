@@ -35,23 +35,25 @@ public:
 		}
 		queue_array[rear] = num;
 	}
+	void remove() {
+		// cek apakah antrian kosong
+		if (front == -1) {
+			cout << "queues underflow\n";
+			return;
+		}
+		cout << "\nthe element deleted from the queue is:" << queue_array[front] << "\n";
+
+		// cek jika antiran hanya memiliki satu elemen
+		if (front == rear) {
+			front = -1;
+			rear = -1;
+		}
+		else {
+			//jika elemen yang dihapus berada di posisi terakhir array, kembali ke awal array
+			if (front == max - 1)
+				front = 0;
+
+		}
+
+	}
 };
-
-void remove() {
-	// cek apakah antrian kosong
-	if (front == -1) {
-		cout << "queues underflow\n";
-		return;
-	}
-	cout << "\nthe element deleted from the queue is:" << queue_array[front] << "\n";
-    
-	// cek jika antiran hanya memiliki satu elemen
-	if (front == rear) {
-		front = -1;
-		rear = -1;
-	}
-	else {
-		
-	}
-
-}
